@@ -1,12 +1,13 @@
 name: IBM Cloud Auto Restart
 
+# schedule at 4:14 +8:00 every friday.
 on:
   push:
     branches: [ master ]
   pull_request:
     branches: [ master ]
   schedule:
-    - cron: '14 4 * * FRI'
+    - cron: '14 20 * * FRI'
 
 jobs:
   ibm-cloud-restart:
